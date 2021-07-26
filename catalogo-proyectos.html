@@ -36,35 +36,24 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="catalogo-proyectos.html">Catalog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service-page.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="planes.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="slider.html">Slider</a></li>
-                    <li class="nav-item"><a class="nav-link" href="perfil.html">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="lista-blogs.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="post-blog.html">Blog Post</a></li>
-                    <li class="nav-item"><a class="nav-link" href="detalle-producto.html">Product</a></li>
-                    <li class="nav-item"><a class="nav-link" href="detalle-pago.html">Payment</a></li>
-                    <li class="nav-item"><a class="nav-link" href="carrito-compras.html">Shopping Cart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="equipo.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="solicitud.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="registro.html">Register</a></li>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive"><a href="/index.html"><img src="assets/img/logoWhite.png" style="width: 125px;height: 50px;"></a>
+                <ul class="navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/planes.html">planes</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/catalogo-proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-blogs.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/equipo.html">Equipo</a></li>
                 </ul>
-            </div>
+            </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;"><i class="fa fa-shopping-cart"></i></button><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
         </div>
     </nav>
+<!-- Inicio de catalogo -->
     <main class="page catalog-page">
         <section class="clean-block clean-catalog dark" style="padding-bottom: 0px;background: #ffffff;">
-            <div class="container">
+            <div class="container mt-5">
                 <div class="block-heading">
                     <h1 style="font-family: Montserrat, sans-serif;font-weight: bold;color: #FCA311;">PROYECTOS</h1>
                     <header></header>
@@ -76,19 +65,19 @@
                         <div class="col-md-3">
                             <div class="d-none d-md-block">
                                 <div class="filters" style="font-family: Montserrat, sans-serif;">
-                                    <div class="filter-item">
+                                    <div class="filter-item ">
                                         <h3 style="font-family: Montserrat, sans-serif;">Categorías</h3>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-family: Montserrat, sans-serif;">Páginas Web</label></div>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2" style="font-family: Montserrat, sans-serif;">Aplicaciones Móviles</label></div>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3" style="font-family: Montserrat, sans-serif;">Mockups</label></div>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4" style="font-family: Montserrat, sans-serif;">Otros</label></div>
+                                        <div class="form-check text-justify"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-family: Montserrat, sans-serif;">Páginas Web</label></div>
+                                        <div class="form-check text-justify"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2" style="font-family: Montserrat, sans-serif;">Aplicaciones Móviles</label></div>
+                                        <div class="form-check text-justify"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3" style="font-family: Montserrat, sans-serif;">Mockups</label></div>
+                                        <div class="form-check text-justify"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4" style="font-family: Montserrat, sans-serif;">Otros</label></div>
                                     </div>
                                     <div class="filter-item">
                                         <h3 style="font-family: Montserrat, sans-serif;">Tecnologías</h3>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5" style="font-family: Montserrat, sans-serif;">HTML</label></div>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6" style="font-family: Montserrat, sans-serif;">CSS</label></div>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7" style="font-family: Montserrat, sans-serif;">JAVASCRIPT</label></div>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-10"><label class="form-check-label" for="formCheck-7" style="font-family: Montserrat, sans-serif;">OTROS</label></div>
+                                        <div class="form-check text-justify"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5" style="font-family: Montserrat, sans-serif;">HTML</label></div>
+                                        <div class="form-check text-justify"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6" style="font-family: Montserrat, sans-serif;">CSS</label></div>
+                                        <div class="form-check text-justify"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7" style="font-family: Montserrat, sans-serif;">JAVASCRIPT</label></div>
+                                        <div class="form-check text-justify"><input class="form-check-input" type="checkbox" id="formCheck-8"><label class="form-check-label" for="formCheck-8" style="font-family: Montserrat, sans-serif;">OTROS</label></div>
                                     </div>
                                 </div>
                             </div>
@@ -225,15 +214,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <nav>
-                                    <!--<ul class="pagination">
-                                        <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                                    </ul><!-->
-                                </nav>
                             </div>
                         </div>
                     </div>
@@ -241,71 +221,9 @@
             </div>
         </section>
     </main>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive"><img src="assets/img/logoWhite.png" style="width: 125px;height: 50px;">
-                <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">¿COMO FUNCIONA?</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">PROYECTOS</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;">LOG IN</button><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
-        </div>
-    </nav>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive"><img src="assets/img/logoWhite.png" style="width: 125px;height: 50px;">
-                <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">¿COMO FUNCIONA?</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">PROYECTOS</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;">LOG IN</button><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
-        </div>
-    </nav>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive"><img src="assets/img/logoWhite.png" style="width: 125px;height: 50px;">
-                <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"></a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">PROYECTOS</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;">LOG IN</button><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
-        </div>
-    </nav>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive"><img src="assets/img/logoWhite.png" style="width: 125px;height: 50px;">
-                <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"></a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">PROYECTOS</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;">LOG IN</button><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
-        </div>
-    </nav>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive"><a href="/index.html"><img src="assets/img/logoWhite.png" style="width: 125px;height: 50px;"></a>
-                <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"></a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/planes.html">planes</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/catalogo-proyectos.html">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-blogs.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/equipo.html">Equipo</a></li>
-                </ul>
-            </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;"><i class="fa fa-shopping-cart"></i></button><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
-        </div>
-    </nav>
+
+
+
     <footer class="footer-basic">
         <div class="social"><a href="#" style="color: #FCA311;border-color: #FCA311;"><i class="icon ion-social-facebook"></i></a><a href="#" style="border-color: #FCA311;"><i class="icon ion-social-github" style="color: #FCA311;border-color: #FCA311;"></i></a></div>
         <p class="copyright" style="font-family: Montserrat, sans-serif;color: #FCA311;font-weight: bold;font-size: 17px;">Masters of Code © 2021</p>
