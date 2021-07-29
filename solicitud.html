@@ -36,60 +36,132 @@
 </head>
 
 <body>
-<!-- navbar -->
-<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-    <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive"><img src="assets/img/logoWhite.png" style="width: 125px;height: 50px;">
-            <ul class="navbar-nav ml-auto text-uppercase">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"></a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/planes.html">planes</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/catalogo-proyectos.html">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-blogs.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/equipo.html">Equipo</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-trabajos.html">Trabajo Freelance</a></li>
-            </ul>
-        </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;"><i class="fa fa-shopping-cart"></i></button><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
-    </div>
-</nav>
-<!-- Tarjeta de solicitud -->
+    <!-- navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive"
+                class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive"><img src="assets/img/logoWhite.png"
+                    style="width: 125px;height: 50px;">
+                <ul class="navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/planes.html">planes</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="/catalogo-proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-blogs.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/equipo.html">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/lista-trabajos.html">Trabajo
+                            Freelance</a></li>
+                </ul>
+            </div><button class="btn btn-primary" type="button" style="background: #FCA311;border-style: none;"><i
+                    class="fa fa-shopping-cart"></i></button><a class="js-scroll-trigger" href="#contact"></a><a
+                class="js-scroll-trigger" href="#contact"></a><a class="js-scroll-trigger" href="#contact"></a>
+        </div>
+    </nav>
+    <!-- Tarjeta de solicitud -->
     <main class="page contact-us-page">
         <section class="clean-block clean-form dark" style="background: #ffffff;padding-bottom: 10px;">
             <div class="container">
                 <div class="block-heading">
                     <h2 class="text-info"></h2>
-                    <h1 style="color: #FCA311;font-family: Montserrat, sans-serif;font-weight: bold;">SOLICITUD DE PROYECTOS</h1>
-                    <p style="font-family: Montserrat, sans-serif;line-height: 25px;">¿Necesitas un proyecto especial? <br>Puedes dejarnos tu solicitud y un desarrollador te responderá pronto.</p>
+                    <h1
+                        style="color: #FCA311;font-family: Montserrat, sans-serif;font-weight: bold; padding-top: 30px;">
+                        SOLICITUD DE PROYECTOS</h1>
+                    <p style="font-family: Montserrat, sans-serif;">
+                    <h5>¿Necesitas un proyecto especial? <br>Puedes dejarnos tu solicitud y un desarrollador te
+                        responderá pronto.</h5>
                 </div>
                 <form style="border-top-color: #FCA311;">
-                    <div class="form-group"><label for="name" style="font-family: Montserrat, sans-serif;">Tu nombre</label><input class="form-control" type="text" id="name" name="name"></div>
-                    <div class="form-group"><label for="email" style="font-family: Montserrat, sans-serif;">Tu e-mail</label><input class="form-control" type="email" id="email" name="email"></div>
-                    <div class="form-group"><label for="subject" style="font-family: Montserrat, sans-serif;">Nombre del proyecto</label><input class="form-control" type="text" id="subject" name="subject"></div>
-                    
-                    <div class="form-group"><label for="message" style="font-family: Montserrat, sans-serif;">Breve descripción de tu proyecto</label><textarea class="form-control" id="message" name="message"></textarea></div>
+                    <div class="form-group"><label for="subject" style="font-family: Montserrat, sans-serif;">
+                            <p style="font-size: 25px;">Elige un nombre para tu proyecto</p>
+                        </label><input class="form-control" type="text" id="subject" name="subject"
+                            placeholder="ej. desarrollo de un sitio web"></div>
+
+                    <div class="form-group"><label for="message" style="font-family: Montserrat, sans-serif;">
+                            <p style="font-size: 25px;">Breve descripción de tu proyecto</p>
+                        </label><textarea class="form-control" id="message" name="message"
+                            placeholder="Describe tu proyecto aquí"></textarea></div>
 
                     <form>
                         <div class="form-row align-items-center">
-                          <div class="col-auto my-1">
-                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                              <option selected>Presupuesto</option>
-                              <option value="1" >$1000 a $2999</option>
-                              <option value="2">$3000 a $4999 </option>
-                              <option value="3">$5000 a $7999</option>
-                              <option value="4">Más de $8000</option>
-                            </select>
-                            </div>     
+                            <div class="col-auto my-1">
+                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Presupuesto</option>
+                                    <option value="1">$1000 a $2999</option>
+                                    <option value="2">$3000 a $4999 </option>
+                                    <option value="3">$5000 a $7999</option>
+                                    <option value="4">Más de $8000</option>
+                                </select>
                             </div>
-                    <br><div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="font-family: Montserrat, sans-serif;background: #FCA311;border-top-style: none;border-top-color: #FCA311;">Enviar</button></div>
-                    </div>
-                </form>
+                        </div>
+
+                        <br>
+                        <div class="form-group"><label for="message" style="font-family: Montserrat, sans-serif;">
+                                <p style="font-size: 15px;">Agrega cualquier imagen o archivo que pueda ser útil para
+                                    explicar tu proyecto</p>
+                            </label></div>
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#staticBackdrop" style="font-family: Montserrat, sans-serif;background: #FCA311">
+                            Vista Previa
+                        </button>
+                        <br>
+                        <div class="form-group"><button class="btn btn-primary" type="submit"
+                                style="font-family: Montserrat, sans-serif;background: #FCA311;border-top-style: none;border-top-color: #FCA311;">Enviar</button>
+                        </div>
+            </div>
+            </form>
             </div>
         </section>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </main>
 
+
+
+
+
+
+
+
+
     <footer class="footer-basic">
-        <div class="social"><a href="#" style="color: #FCA311;border-color: #FCA311;"><i class="icon ion-social-facebook"></i></a><a href="#" style="border-color: #FCA311;"><i class="icon ion-social-github" style="color: #FCA311;border-color: #FCA311;"></i></a></div>
-        <p class="copyright" style="font-family: Montserrat, sans-serif;color: #FCA311;font-weight: bold;font-size: 17px;">Masters of Code © 2021</p>
+        <div class="social"><a href="#" style="color: #FCA311;border-color: #FCA311;"><i
+                    class="icon ion-social-facebook"></i></a><a href="#" style="border-color: #FCA311;"><i
+                    class="icon ion-social-github" style="color: #FCA311;border-color: #FCA311;"></i></a></div>
+        <p class="copyright"
+            style="font-family: Montserrat, sans-serif;color: #FCA311;font-weight: bold;font-size: 17px;">Masters of
+            Code © 2021</p>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
