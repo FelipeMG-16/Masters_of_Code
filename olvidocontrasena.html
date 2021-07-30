@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Register - Brand</title>
+    <title>Olvidé la contraseña</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserratdisplay=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Ludens-Users---2-Register.css">
+    <link rel="stylesheet" href="assets/css/Ludens-Users---25-After-Register.css">
     <link rel="stylesheet" href="assets/css/Ludens-Users---3-Profile.css">
     <link rel="stylesheet" href="assets/css/Projects-Clean.css">
     <link rel="stylesheet" href="assets/css/Recipe-Card.css">
@@ -37,21 +39,33 @@
 
 <body>
     <!-- Tarjeta de olvido de contraseña -->
-    <main class="page registration-page">
-        <section class="clean-block clean-form dark" style="background: #FFFFFF;">
-            <div class="container" style="border-top-style: none;text-shadow: 0px 0px;">
-                <div class="block-heading">
-                    <h1 style="font-size: 36px;font-weight: bold;color: #FCA311;font-family: Montserrat, sans-serif;">RECUPERACIÓN DE CONTRASEÑA</h1>
-                </div>
-                <form style="border-top-color: #FCA311;">
-                    <div class="form-group">
-                        <label for="name"style="font-family: Montserrat, sans-serif;">Ingresa tu correo</label>
-                        <input class="form-control item" type="text" id="name" placeholder="tucorreo@dominio.com">
-                    </div>
-                    <button class="btn btn-primary btn-block mt-5" type="submit"style="background: #FCA311;border-top-style: none;font-weight: bold;font-family: Montserrat, sans-serif;">Enviar</button>
-                </form>
-            </div>
-        </section>
+
+
+
+        <section>
+            <div id="multple-step-form-n" class="container overflow-hidden" style="margin-top: 50px;margin-bottom: 10px;padding-bottom: 0px;padding-top: 0px;">
+                <section class="clean-block clean-form dark h-100" style="background-color: rgb(255,255,255);">
+                    <section class="register-photo" style="padding: 0px 0px;background: #ffffff;">
+                        <div class="form-container" style="margin-top: 40px;">
+                            <div class="image-holder" style="border-top-color: #FCA311;background: url(assets/img/developerbg.jpg);background-size: cover;"></div>
+                            <form method="post" action="afterRegister.html" style="border-top-color: #FCA311;">
+                                <h2 class="text-center" style="color: #FCA311;font-family: Montserrat ;font-weight: bold;font-size: 35px;"><strong>RECUPERACIÓN DE CONTRASEÑA</strong><br></h2>
+                                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Correo"></div>
+                                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Contraseña"></div>
+
+                                <div class="form-group">
+                                </div>
+                                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="color: rgb(255,255,255);background: #FCA311;">Recuperar Contraseña</button></div>
+                                <a class="already" href="login.html" style="font-size: 15px;">¿Ya tienes una cuenta? Inicia sesión</a>
+                            </form>
+                        </div>
+                    </section>
+                </section>
+
+
+
+
+
     </main>
     
     <script src="assets/js/jquery.min.js"></script>

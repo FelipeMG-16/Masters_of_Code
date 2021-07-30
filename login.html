@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Ludens-Users---2-Register.css">
+    <link rel="stylesheet" href="assets/css/Ludens-Users---25-After-Register.css">
     <link rel="stylesheet" href="assets/css/Ludens-Users---3-Profile.css">
     <link rel="stylesheet" href="assets/css/Projects-Clean.css">
     <link rel="stylesheet" href="assets/css/Recipe-Card.css">
@@ -36,40 +38,31 @@
 
 <body>
   <!-- tarjeta de Inicio de Sesion   -->
-    <main class="page login-page">
-        <section class="clean-block clean-form dark" style="background: #FFFFFF;">
-            <div class="container">
-                <div class="block-heading">
-                    <h1 style="color: #FCA311;font-weight: bold;font-size: 36px;font-family: Montserrat, sans-serif;">
-                        INGRESO USUARIO</h1>
-                </div>
-                <form style="border-top-color: #FCA311;">
-                    <div class="form-group">
-                        <label for="email"style="font-family: Montserrat, sans-serif;">Email</label>
-                        <input class="form-control item"type="email" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password"style="font-family: Montserrat, sans-serif;">Contraseña</label>
-                        <input class="form-control"type="password" id="password">
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="checkbox">
-                            <label class="form-check-label" for="checkbox"style="font-family: Montserrat, sans-serif;">Recuérdame</label>
+    
+
+        <section>
+            <div id="multple-step-form-n" class="container overflow-hidden" style="margin-top: 50px;margin-bottom: 10px;padding-bottom: 0px;padding-top: 0px;">
+                <section class="clean-block clean-form dark h-100" style="background-color: rgb(255,255,255);">
+                    <section class="register-photo" style="padding: 0px 0px;background: #ffffff;">
+                        <div class="form-container" style="margin-top: 40px;">
+                            <div class="image-holder" style="border-top-color: #FCA311;background: url(assets/img/developerbg.jpg);background-size: cover;"></div>
+                            <form method="post" action="afterRegister.html" style="border-top-color: #FCA311;">
+                                <h2 class="text-center" style="color: #FCA311;font-family: Montserrat ;font-weight: bold;font-size: 35px;"><strong>BIENVENIDO</strong><br></h2>
+                                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Correo"></div>
+                                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Contraseña"></div>
+
+                                <div class="form-group">
+                                </div>
+                                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="color: rgb(255,255,255);background: #FCA311;">Iniciar Sesión</button></div>
+                                <a class="already" href="/olvidocontrasena.html" style="font-size: 15px;">¿Olvidaste tu contraseña? Recupérala aquí</a>
+                                <a class="already" href="/registro.html" style="font-size: 15px;">¿No tienes una cuenta? Regístrate aquí</a>
+
+                            </form>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <a class="" style="font-family: Montserrat, sans-serif;" href="registro.html">Crear nueva cuenta</a>
-                        </div>
-                        <div class="form-check mt-2 p-2">
-                            <a class="" style="font-family: Montserrat, sans-serif;" href="olvidocontrasena.html">Olvidé mi contraseña</a>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary btn-block" type="submit" style="background: #FCA311;border-style: none;font-weight: bold;font-family: Montserrat, sans-serif;">Ingresar</button>
-                </form>
-            </div>
-        </section>
+                    </section>
+                </section>
+
+        
     </main>
     
     
