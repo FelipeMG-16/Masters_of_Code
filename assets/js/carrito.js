@@ -35,7 +35,24 @@ window.onload = function () {
     const miLocalStorage = window.localStorage;
 
     // Funciones
+    function loadCarrito() {
+        
+    const carritoLocalStorage = JSON.parse(localStorage.getItem('carrito')) || [];
+        
+       /*  console.log(carritoLocalStorage); */
 
+        carritoLocalStorage.forEach(elemento => {
+            carrito.push(elemento);
+            calcularTotal();
+            // Actualizamos el carrito 
+            renderizarCarrito();
+            // Actualizamos el LocalStorage
+            guardarCarritoEnLocalStorage();
+            // agregar cantidad a carrito
+            addNumCompras(); 
+        });
+    }
+    loadCarrito();
     /**
     * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
     */
@@ -79,17 +96,29 @@ window.onload = function () {
     * Evento para añadir un producto al carrito de la compra
     */
     function anadirProductoAlCarrito(evento) {
+       
+       const containCarrito = carrito.includes(evento.target.getAttribute('marcador'));
         // Añadimos el Nodo a nuestro carrito
-        carrito.push(evento.target.getAttribute('marcador'))
-        // Calculo el total
-        calcularTotal();
-        // Actualizamos el carrito 
-        renderizarCarrito();
-        // Actualizamos el LocalStorage
-        guardarCarritoEnLocalStorage();
-        // agregar cantidad a carrito
-        addNumCompras();
+        if(!containCarrito){
+            carrito.push(evento.target.getAttribute('marcador'));   
+            // Calculo el total
+            calcularTotal();
+            // Actualizamos el carrito 
+            renderizarCarrito();
+            // Actualizamos el LocalStorage
+            guardarCarritoEnLocalStorage();
+            // agregar cantidad a carrito
+            addNumCompras();
+        } else {
+            swal({
+                text: "Este producto ya fue seleccionado",
+              })
+        }
+        console.log(carrito);
+       
     }
+
+   
 
     function addNumCompras(rest = false){
 
@@ -145,6 +174,7 @@ window.onload = function () {
     function borrarItemCarrito(evento) {
         // Obtenemos el producto ID que hay en el boton pulsado
         const id = evento.target.dataset.item;
+        console.log(id);    
         // Borramos todos los productos
         carrito = carrito.filter((carritoId) => {
             return carritoId !== id;
