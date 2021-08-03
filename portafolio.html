@@ -60,16 +60,52 @@
                         <p">Portafolio de Luis Bucio</p>
                     </div>
                     <form action="">
-                        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+                        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar"><br><br>
                     </form>
-                    <div class="categorias" id="categorias">
-                        <a href="#" class="activo" >Todos</a>
-                        <a href="#">Desarrollo Web</a>
-                        <a href="#">Desarrollo Móvil</a>
-                        <a href="#">MockUps</a>
-                        <a href="#">En venta</a>
-                    </div>
-                </header>
+
+                    
+
+
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-family: Montserrat, sans-serif;background: #FCA311">
+    AÑADIR PROYECTO
+  </button><br><br>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" >AÑADIR PROYECTO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group"><input class="form-control" type="text" name="title" placeholder="Título del Proyecto"></div>
+            <div class="form-group"><input class="form-control" type="text" name="description" placeholder="Describe el proyecto"></div>
+
+            <div class="form-group">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary"  style="font-family: Montserrat, sans-serif;background: #FCA311">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="categorias" id="categorias">
+    <a href="#" class="activo">Todos</a>
+    <a href="#">Desarrollo Web</a>
+    <a href="#">Desarrollo Móvil</a>
+    <a href="#">Mockups</a>
+    <a href="#">En venta</a>
+</div>
+
+            </header>
         
                 <section class="grid" id="grid">
                     <div class="item" 
