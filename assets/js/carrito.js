@@ -23,22 +23,41 @@ window.onload = function () {
         },
         {
             id: 4,
-            nombre: 'Pagina web ',
+            nombre: 'Pagina Web',
             precio: 560,
-            imagen: 'assets/img/tech/PRO3.png'
+            imagen: 'assets/img/tech/PRO4.png'
         },
         {
             id: 5,
             nombre: 'App Android',
             precio: 1200,
-            imagen: 'assets/img/tech/PRO6.png'
+            imagen: 'assets/img/tech/PRO3.png'
         },
         {
             id: 6,
-            nombre: 'Pagina web',
+            nombre: 'Pagina web responsiva',
             precio: 800,
-            imagen: 'assets/img/tech/PRO5.png'
-        },      
+            imagen: 'assets/img/tech/proyecto4.jpg'
+        },
+        {
+            id: 7,
+            nombre: 'Mockup Responsivo',
+            precio: 320,
+            imagen: 'assets/img/tech/proyecto8.jpg'
+        },
+        {
+            id: 8,
+            nombre: 'Pagina web',
+            precio: 950,
+            imagen: 'assets/img/tech/proyecto9.jpg'
+        },
+        {
+            id: 9,
+            nombre: 'Pagina web responsiva',
+            precio: 1800,
+            imagen: 'assets/img/tech/proyecto7.jpg'
+        },
+      
 
     ];
 
@@ -115,6 +134,7 @@ window.onload = function () {
     function anadirProductoAlCarrito(evento) {
        
        const containCarrito = carrito.includes(evento.target.getAttribute('marcador'));
+       console.log(containCarrito);
         // Añadimos el Nodo a nuestro carrito
         if(!containCarrito){
             carrito.push(evento.target.getAttribute('marcador'));   
