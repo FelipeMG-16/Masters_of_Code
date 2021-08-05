@@ -13,7 +13,7 @@ window.onload = function () {
             id: 2,
             nombre: 'Pagina web',
             precio: 450,
-            imagen: 'assets/img/tech/PRO5.png'
+            imagen: 'assets/img/tech/PRO4.png'
         },
         {
             id: 3,
@@ -21,7 +21,24 @@ window.onload = function () {
             precio: 800,
             imagen: 'assets/img/tech/PRO2.png'
         },
-      
+        {
+            id: 4,
+            nombre: 'Pagina web ',
+            precio: 560,
+            imagen: 'assets/img/tech/PRO3.png'
+        },
+        {
+            id: 5,
+            nombre: 'App Android',
+            precio: 1200,
+            imagen: 'assets/img/tech/PRO6.png'
+        },
+        {
+            id: 6,
+            nombre: 'Pagina web',
+            precio: 800,
+            imagen: 'assets/img/tech/PRO5.png'
+        },      
 
     ];
 
@@ -111,7 +128,6 @@ window.onload = function () {
             addNumCompras();
         } else {
 
-           alert('Producto seleccionado');
             swal({
                 text: "Este producto ya fue seleccionado",
               })
@@ -271,6 +287,7 @@ function calificar(item) {
         }
     }
 }
+
 
 
 
