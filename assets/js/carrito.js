@@ -110,7 +110,12 @@ window.onload = function () {
             // agregar cantidad a carrito
             addNumCompras();
         } else {
+
            alert('Producto seleccionado');
+            swal({
+                text: "Este producto ya fue seleccionado",
+              })
+ main
         }
         console.log(carrito);
        
