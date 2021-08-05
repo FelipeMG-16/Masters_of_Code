@@ -267,6 +267,7 @@ window.onload = function () {
 
     function guardarCarritoEnLocalStorage () {
         miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+
     }
 
     function cargarCarritoDeLocalStorage () {
@@ -307,7 +308,6 @@ function calificar(item) {
         }
     }
 }
-
 
 
 
