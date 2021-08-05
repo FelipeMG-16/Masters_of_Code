@@ -13,7 +13,7 @@ window.onload = function () {
             id: 2,
             nombre: 'Pagina web',
             precio: 450,
-            imagen: 'assets/img/tech/PRO5.png'
+            imagen: 'assets/img/tech/PRO4.png'
         },
         {
             id: 3,
@@ -147,9 +147,11 @@ window.onload = function () {
             // agregar cantidad a carrito
             addNumCompras();
         } else {
+
             swal({
                 text: "Este producto ya fue seleccionado",
               })
+ main
         }
         console.log(carrito);
        
@@ -305,22 +307,6 @@ function calificar(item) {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

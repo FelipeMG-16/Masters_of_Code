@@ -11,23 +11,24 @@ formLogin.addEventListener("submit", (e) =>{
     const emailError = document.querySelector("#emailError");
     const passwordError = document.querySelector("#passwordError");
 
-    if(email.textContent == ''){
+    if(email.value == ''){
         emailError.textContent = "Error, favor de ingresar un email";
     }
 
-    if(password.textContent == ''){
+    if(password.value == ''){
         passwordError.textContent = "Error, favor de ingresar un password";
     }
 
     if(
-        email.textContent != '' && password.textContent != ''){
-    fetch('http://localhost:8080/login',{
-        method: "POST",
-        body : JSON.stringify({
-            username : email.textContent,
-            password : password.textContent
+        email.value != '' && password.textContent != ''){
+            fetch('http://localhost:8080/login',{
+            method: "POST",
+            body : JSON.stringify({
+                username : email.value,
+                password : password.value
+            })
+        }).then(resp) => {
+            console.log(resp.status);
         })
-    }) .then(response) => response.json())
-        .then(data) => console.log(data));
-}
+    }
 });
