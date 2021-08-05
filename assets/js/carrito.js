@@ -134,6 +134,7 @@ window.onload = function () {
     function anadirProductoAlCarrito(evento) {
        
        const containCarrito = carrito.includes(evento.target.getAttribute('marcador'));
+       console.log(containCarrito);
         // Añadimos el Nodo a nuestro carrito
         if(!containCarrito){
             carrito.push(evento.target.getAttribute('marcador'));   
