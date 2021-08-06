@@ -4,10 +4,10 @@ const formRegistro = document.querySelector("#formRegistro");
 formRegistro.addEventListener("submit", (e) => {
 
     e.preventDefault();
-    var selectRol = document.querySelector("[name='rol']"); 
-    var selectEstado = document.querySelector("[name='estado']"); 
-    var rol = selectRol.options[selectRol.selectedIndex].value;
-    var estado = selectEstado.options[selectEstado.selectedIndex].value;
+    let selectRol = document.querySelector("[name='rol']"); 
+    let selectEstado = document.querySelector("[name='estado']"); 
+    let rol = selectRol.options[selectRol.selectedIndex].value;
+    let estado = selectEstado.options[selectEstado.selectedIndex].value;
     const email = document.querySelector("#email");
     const password = document.querySelector("#password");
     const nombre = document.querySelector("#nombre");
