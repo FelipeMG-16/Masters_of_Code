@@ -34,7 +34,10 @@ formPublicar.addEventListener('submit', (e) => {
                 descripcion: descripcion,
                 precio: precio,
                 categoria: categoria,
-                imagen: imagen
+                imagen: imagen,
+                usuarios: {
+                    id: userId
+                }
             }),
             headers: {
                 'Authorization': token,
