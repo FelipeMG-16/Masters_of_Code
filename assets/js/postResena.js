@@ -24,7 +24,10 @@ form.addEventListener('submit', (e) => {
             body: JSON.stringify({
                 resumen: resumen,
                 opinion: opinion,
-                calificacion: calificacion
+                calificacion: calificacion,
+                usuarios: {
+                    id: userId
+                }
             }),
             headers: {
                 'Authorization': token,
