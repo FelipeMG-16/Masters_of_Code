@@ -22,10 +22,10 @@ form.addEventListener('submit', (e) => {
     // Peticion fetch
     if (titulo != '' && descripcion != '') {
     
-        fetch('http://localhost:8080/proyectos', {
+        fetch('http://localhost:8080/solicitudes', {
             method: "POST",
             body: JSON.stringify({
-                titulo: titulo,
+                nombre: titulo,
                 descripcion: descripcion,
                 presupuesto: presupuesto,
             }),

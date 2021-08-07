@@ -185,7 +185,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <form class="">
+                                                        <form id="form" style="border-top-color: #FCA311;">
                                                             <div class="rating border form-group p-2">
                                                                 <span id="1estrella" class="reseña-estrella fa fa-star" onclick="calificar(this)"></span>
                                                                 <span id="2estrella" class="reseña-estrella fa fa-star" onclick="calificar(this)"></span>
@@ -195,11 +195,11 @@
                                                                 <small class="form-text text-muted">Selecciona la calificación que le das al proyecto</small>
                                                             </div>
                                                             <div class="form-group">
-                                                            <input type="text" class="form-control" id="reseña-titulo" placeholder="Resumen">
+                                                            <input type="text" class="form-control" id="resumen" placeholder="Resumen">
                                                             <small class="form-text text-muted">Resumen de tu opinion. Por ejemplo: La mejor compra de mi vida</small>
                                                             </div>
                                                             <div class="form-group">
-                                                            <textarea class="col-12" name="reseña-texto" id="reseña-texto" placeholder="Tu reseña"></textarea>
+                                                            <textarea class="col-12" name="reseña-texto" id="opinion" placeholder="Tu reseña"></textarea>
                                                             <small class="form-text text-muted">Tu opinion de sobre el proyecto</small>
                                                             </div>
                                                             <div class="modal-footer justify-content-center">
@@ -286,6 +286,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/reseña-estrellas.js"></script>
+    <script src="assets/js/postResena.js"></script>
 </body>
 
 </html>
